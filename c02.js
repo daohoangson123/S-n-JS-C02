@@ -59,12 +59,12 @@ let Player = {
 
 // 01 xuat du lieu
 
-console.log("" + Player);
-console.log("" + Player);
-console.log("" + Player);
-console.log("" + Player);
-console.log("" + Player);
-console.log("" + Player);
+console.log("Name: " + Player.Name);
+console.log("Number: " + Player.Number);
+console.log("Skills:");
+console.log(" Kick: " + Player.Skills.Kick);
+console.log(" Pass: " + Player.Skills.Pass);
+console.log(" Headbutt: " + Player.Skills.Headbutt);
 
 // 03 chi so trung binh
 
@@ -72,7 +72,7 @@ let chiSoTb = (Player.Skills.Kick + Player.Skills.Pass + Player.Skills.Headbutt)
 console.log("Chỉ số kỹ năng trung bình là: " + Math.floor(chiSoTb));
 
 hopLe = (Number.isInteger(Player.Number)) && 0 < Player.Number && Player.Number < 100 ? "Số áo hợp lệ" : "Số áo không hợp lệ"; // 04 so ao hop le lon hon 0 va nho hon 100 - && dung khi thoa ca 2 dieu kien
-console.log("So ao: " + Player.Number + " la " + hopLe);
+console.log("Số áo: " + Player.Number + " là " + hopLe);
 // (Number.isInteger(Player.Number)) xet so nguyen
 
 console.log("\nLAPTOP");
